@@ -33,6 +33,34 @@ This project applies core OOP principles to keep the design modular, extensible,
 
 ---
 
+## Project Structure
+
+The project is organized into a typical Gradle-based Java folder structure. The main application code is separated into logical packages for models and pricing policies.
+
+```
+Food_Delivery_LLD/
+└── app/
+    ├── build.gradle
+    └── src/
+        ├── main/
+        │   └── java/
+        │       └── Food/
+        │           ├── Main.java
+        │           ├── model/
+        │           │   ├── FoodOrder.java
+        │           │   ├── OrderItem.java
+        │           │   └── OrderStatus.java
+        │           └── pricing/
+        │               ├── ChargePolicy.java
+        │               ├── PricingEngine.java
+        │               ├── PercentageDiscountPolicy.java
+        │               ├── DeliveryChargePolicy.java
+        │               └── PackagingChargePolicy.java
+        └── test/
+            └── java/
+```
+           
+
 ### 1. Abstraction
 
 Abstraction means exposing only essential details while hiding unnecessary internal logic.
